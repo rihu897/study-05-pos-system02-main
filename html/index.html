@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>POSシステム</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>POSシステム</h1>
+        <!-- CSV選択フォーム、商品一覧表 -->
+        <h3>■商品一覧</h3>
+        <form>
+            <input id="item_info_csv" type="text" placeholder="CSVファイルのパスを入力">
+        </form>
+        <div id="item_list"></div>
+        <!-- 商品コード、数量入力フォーム -->
+        <h3>■カート</h3>
+        <form class="cart_form">
+            <table>
+                <thead>
+                    <tr>
+                        <th>商品コード</th>
+                        <th>数量</th>
+                    </tr>
+                </thead>
+                <tbody id="cart_item">
+                    <tr>
+                        <td><input class="item_code" type="text" placeholder="商品コードを入力"></td>
+                        <td><input class="number" type="number" min="0" value="0"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="button_wrapper">
+                <p><button id="add" type="button">商品追加</button></p>
+                <p><button id="pay_off" type="button">精算</button></p>
+            </div>
+        </form>
+        <div class="result">
+            <!-- 精算結果表示、お支払いフォーム -->
+            <h3>■精算結果・お支払い</h3>
+            <p><textarea readonly id="display_box" value=""></textarea></p>
+            <form class="payment_form">
+                <p><b>お支払金額：</b></p>
+                <p><input  id="money" type="number" min="0" value="0"></p>
+                <p><button id="decision" type="button">決定</button></p>
+            </form>
+        </div>
+        <!-- JavaScript読み込み -->
+        <script type="text/javascript" src="./eel.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
+

@@ -1,0 +1,53 @@
+h1 {
+    color: white;
+    background-color: #00008b;
+    padding-left: 10px;
+}
+
+h3 {
+    border-bottom: 2px solid #a9a9a9;
+}
+
+.cart_form, #item_info_csv {
+    width: 365px;
+}
+
+.button_wrapper {
+    display: flex;
+    margin-left: 245px;
+}
+
+.payment_form {
+    display: flex;
+    margin-left: 45px;
+}
+
+.payment_form p {
+    margin-right: 5px;
+}
+
+#display_box {
+    width: 365px;
+    height: calc(1.3em * 14);
+    line-height: 1.3;
+}
+
+#add {
+    margin-right: 5px;
+}
+
+#item_table {
+    border-collapse: collapse;
+    border : 2px solid black;
+}
+
+#item_table th {
+    border: 1px solid black;
+    padding: 0px 5px;
+    background-color: #e0ffff;
+}
+
+#item_table td {
+    border : 1px solid black;
+    padding: 0px 5px;
+}
